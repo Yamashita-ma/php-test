@@ -1,0 +1,109 @@
+@charset "UTF-8";
+*{
+	text-decoration: none;
+	list-style: none;
+}
+header img{
+	width:400px;
+}
+header li{
+	background-color: black;
+	color:white;
+	width:100%;
+	height:50px;
+}
+header li ul{
+	float:left;
+}
+.left{
+	width:700px;
+	height:100%;
+	float:left;
+}
+.right{
+	width:300px;
+	margin-left: 30px;
+	float:left;
+}
+
+h1{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	background-color: #f1f1f1;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	font-size: 20px;
+	border-bottom: 1px solid gray;
+	border-left:5px solid black;
+}
+.left p{
+	font-size:15px;
+}
+.entry{
+	border-left: 4px red solid;
+}
+form{
+	background-color: #fbfbfb;
+	border:3px #ebebeb solid;
+	border-radius: 10px;
+	width: 650px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 60px;
+}
+.kiji{
+	margin:5px 0;
+	background-color: #fbfbfb;
+	border:3px #ebebeb solid;
+	border-radius: 10px;
+}
+.keijiban h3{
+	border-bottom:1px solid black;
+}
+.text{
+	width: 300px;
+}
+textarea{
+	width: 300px;
+	height:100px;
+}
+.button1{
+	border:1px solid lightgray;
+	padding: 4px 10px;
+	color: white;
+	background-color: #bfbfbf;
+	border-radius: 5px;
+	border-bottom: 2px solid gray;
+}
+.button2{
+	border:1px solid lightgray;
+	padding: 4px 10px;
+	color: white;
+	background-color: darkorange;
+	border-radius: 5px;
+	border-bottom: 2px solid #E08600;
+}
+
+.right h2{
+	font-size:18px;
+	border-bottom:1px dashed black;
+}
+footer{
+	clear:both;
+	text-align:center;
+	background-color: black;
+	color:white;
+	width:100%;
+	height:35px;
+	line-height: 35px;
+}
+
+<form action="insert.php" method="post">
+			<input type="submit" class="button2" value="確認する"/>
+			<input type="hidden" value="<?php echo $_POST['handlename'];?>" name="handlename">
+			<input type="hidden" value="<?php echo $_POST['title'];?>" name="title">
+			<input type="hidden" value="<?php echo $_POST['comments'];?>" name="comments">
+</form>
+
